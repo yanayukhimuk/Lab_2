@@ -2,7 +2,7 @@
 #include <Windows.h>
 using namespace std;
 void outp(char* str) {
-	printf("%s\n%d - размер\n", str, strlen(str));
+	printf("%s\n%d - размер строки\n", str, strlen(str));
 }
 int main() {
 	SetConsoleCP(1251);
@@ -18,7 +18,7 @@ int main() {
 		else
 			if (str[i] == '.')
 				str[i] = str[0];
-	printf("%d - кол-во\nНовую строку после замены '.' на %c\n%s - новая строка\n", count, str[0], str);
+	printf("%d - кол-во символов, равных первому в строке.\nНовую строку после замены '.' на %c\n%s - новая строка\n", count, str[0], str);
 	system("pause");
 	return 0;
 }
